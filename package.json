@@ -1,0 +1,14 @@
+{
+  "name": "web-components-training",
+  "version": "1.0.0",
+  "description": "A training repo about using [Web Components APIs](https://developer.mozilla.org/en-US/docs/Web/API/Web_Components).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Lowic Mangin",
+  "license": "ISC",
+  "dependencies": {
+    "@github/details-menu-element": "^1.0.13"
+  }
+}

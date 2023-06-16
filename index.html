@@ -35,9 +35,64 @@
     <link rel="stylesheet" href="css/main.css" />
 
     <!-- Web Components: -->
+    <script
+      type="module"
+      src="./node_modules/@github/details-menu-element/dist/index.js"
+    ></script>
   </head>
 
   <body>
     <h1>Using Web Components</h1>
+
+    <h2>GitHub <code>&lt;details-menu-element&gt;</code> web component</h2>
+
+    <h3>Basic component</h3>
+
+    <details>
+      <summary>Robots</summary>
+
+      <details-menu role="menu">
+        <button type="button" role="menuitem">Hubot</button>
+        <button type="button" role="menuitem">Bender</button>
+        <button type="button" role="menuitem">BB-8</button>
+      </details-menu>
+    </details>
+
+    <h3>With update on menu item activation</h3>
+
+    <details>
+      <summary>Preferred robot: <span data-menu-button>None</span></summary>
+
+      <details-menu role="menu">
+        <button type="button" role="menuitem" data-menu-button-contents>
+          Hubot
+        </button>
+        <button type="button" role="menuitem" data-menu-button-contents>
+          Bender
+        </button>
+        <button type="button" role="menuitem" data-menu-button-contents>
+          BB-8
+        </button>
+      </details-menu>
+    </details>
+
+    <h3>With radio buttons</h3>
+
+    <details>
+      <summary>Preferred robot</summary>
+      <details-menu role="menu">
+        <label tabindex="0" role="menuitemradio">
+          <input type="radio" name="robot" value="Hubot" /> Hubot
+        </label>
+
+        <label tabindex="0" role="menuitemradio">
+          <input type="radio" name="robot" value="Bender" /> Bender
+        </label>
+
+        <label tabindex="0" role="menuitemradio">
+          <input type="radio" name="robot" value="BB-8" /> BB-8
+        </label>
+      </details-menu>
+    </details>
   </body>
 </html>
