@@ -1,0 +1,29 @@
+/* =============
+   CSS VARIABLES
+   ============= */
+
+html {
+  --neutral-900: #2a2929;
+
+  --font-title: "Montserrat", arial, sans-serif;
+  --font-text: "Lato", helvetica, sans-serif;
+
+  --large-container-width: 1440px;
+}
+
+/* ========
+   RAW TAGS
+   ======== */
+
+body {
+  max-width: var(--large-container-width);
+  margin: auto;
+
+  color: var(--neutral-900);
+  font-family: var(--font-text);
+}
+
+h1,
+h2 {
+  font-family: var(--font-title);
+}
