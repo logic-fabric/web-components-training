@@ -3,6 +3,10 @@
    ============= */
 
 html {
+  --primary-600: #1f7081;
+
+  --tonic-600: #e47502;
+
   --neutral-900: #2a2929;
 
   --font-title: "Montserrat", arial, sans-serif;
@@ -26,4 +30,12 @@ body {
 h1,
 h2 {
   font-family: var(--font-title);
+}
+
+h1 {
+  color: var(--primary-600);
+}
+
+h2 {
+  color: var(--tonic-600);
 }
