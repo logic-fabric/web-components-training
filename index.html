@@ -39,6 +39,10 @@
       type="module"
       src="./node_modules/@github/details-menu-element/dist/index.js"
     ></script>
+    <script
+      type="module"
+      src="./node_modules/@github/relative-time-element/dist/index.js"
+    ></script>
   </head>
 
   <body>
@@ -94,5 +98,34 @@
         </label>
       </details-menu>
     </details>
+
+    <h2>
+      GitHub <code>&lt;relative-time&gt;</code> web component (localized with
+      <code>lang</code> attribute)
+    </h2>
+
+    <h3>Basic component</h3>
+
+    <relative-time datetime="2042-06-210T16:30:00-08:00">
+      June 21, 2042
+    </relative-time>
+
+    <h3>With attribute <code>format="datetime"</code></h3>
+
+    <relative-time datetime="2042-06-21T16:30:00-08:00" format="datetime">
+      June 21, 2042
+    </relative-time>
+
+    <h3>With attribute <code>format="duration"</code></h3>
+
+    <relative-time datetime="2042-06-21T16:30:00-08:00" format="duration">
+      June 21, 2042
+    </relative-time>
+
+    <h3>With attribute <code>format="relative"</code></h3>
+
+    <relative-time datetime="2042-06-21T16:30:00-08:00" format="relative">
+      June 21, 2042
+    </relative-time>
   </body>
 </html>

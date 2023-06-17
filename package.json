@@ -9,6 +9,7 @@
   "author": "Lowic Mangin",
   "license": "ISC",
   "dependencies": {
-    "@github/details-menu-element": "^1.0.13"
+    "@github/details-menu-element": "^1.0.13",
+    "@github/relative-time-element": "^4.3.0"
   }
 }
