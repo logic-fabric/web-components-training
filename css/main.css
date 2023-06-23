@@ -4,6 +4,7 @@
 
 html {
   --primary-600: #1f7081;
+  --parimary-700: #0c5363;
 
   --tonic-600: #e47502;
 
@@ -38,4 +39,12 @@ h1 {
 
 h2 {
   color: var(--tonic-600);
+}
+
+h3 {
+  color: var(--primary-600);
+}
+
+h4 {
+  color: var(--primary-700);
 }

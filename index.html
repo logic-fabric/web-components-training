@@ -48,84 +48,92 @@
   <body>
     <h1>Using Web Components</h1>
 
-    <h2>GitHub <code>&lt;details-menu-element&gt;</code> web component</h2>
+    <section>
+      <h2>Custom Web Components</h2>
+    </section>
 
-    <h3>Basic component</h3>
+    <section>
+      <h2>Some Web Components found in libraries</h2>
 
-    <details>
-      <summary>Robots</summary>
+      <h3>GitHub <code>&lt;details-menu-element&gt;</code> web component</h3>
 
-      <details-menu role="menu">
-        <button type="button" role="menuitem">Hubot</button>
-        <button type="button" role="menuitem">Bender</button>
-        <button type="button" role="menuitem">BB-8</button>
-      </details-menu>
-    </details>
+      <h4>Basic component</h4>
 
-    <h3>With update on menu item activation</h3>
+      <details>
+        <summary>Robots</summary>
 
-    <details>
-      <summary>Preferred robot: <span data-menu-button>None</span></summary>
+        <details-menu role="menu">
+          <button type="button" role="menuitem">Hubot</button>
+          <button type="button" role="menuitem">Bender</button>
+          <button type="button" role="menuitem">BB-8</button>
+        </details-menu>
+      </details>
 
-      <details-menu role="menu">
-        <button type="button" role="menuitem" data-menu-button-contents>
-          Hubot
-        </button>
-        <button type="button" role="menuitem" data-menu-button-contents>
-          Bender
-        </button>
-        <button type="button" role="menuitem" data-menu-button-contents>
-          BB-8
-        </button>
-      </details-menu>
-    </details>
+      <h4>With update on menu item activation</h4>
 
-    <h3>With radio buttons</h3>
+      <details>
+        <summary>Preferred robot: <span data-menu-button>None</span></summary>
 
-    <details>
-      <summary>Preferred robot</summary>
-      <details-menu role="menu">
-        <label tabindex="0" role="menuitemradio">
-          <input type="radio" name="robot" value="Hubot" /> Hubot
-        </label>
+        <details-menu role="menu">
+          <button type="button" role="menuitem" data-menu-button-contents>
+            Hubot
+          </button>
+          <button type="button" role="menuitem" data-menu-button-contents>
+            Bender
+          </button>
+          <button type="button" role="menuitem" data-menu-button-contents>
+            BB-8
+          </button>
+        </details-menu>
+      </details>
 
-        <label tabindex="0" role="menuitemradio">
-          <input type="radio" name="robot" value="Bender" /> Bender
-        </label>
+      <h4>With radio buttons</h4>
 
-        <label tabindex="0" role="menuitemradio">
-          <input type="radio" name="robot" value="BB-8" /> BB-8
-        </label>
-      </details-menu>
-    </details>
+      <details>
+        <summary>Preferred robot</summary>
+        <details-menu role="menu">
+          <label tabindex="0" role="menuitemradio">
+            <input type="radio" name="robot" value="Hubot" /> Hubot
+          </label>
 
-    <h2>
-      GitHub <code>&lt;relative-time&gt;</code> web component (localized with
-      <code>lang</code> attribute)
-    </h2>
+          <label tabindex="0" role="menuitemradio">
+            <input type="radio" name="robot" value="Bender" /> Bender
+          </label>
 
-    <h3>Basic component</h3>
+          <label tabindex="0" role="menuitemradio">
+            <input type="radio" name="robot" value="BB-8" /> BB-8
+          </label>
+        </details-menu>
+      </details>
 
-    <relative-time datetime="2042-06-210T16:30:00-08:00">
-      June 21, 2042
-    </relative-time>
+      <h3>
+        GitHub <code>&lt;relative-time&gt;</code> web component (localized with
+        <code>lang</code> attribute)
+      </h3>
 
-    <h3>With attribute <code>format="datetime"</code></h3>
+      <h4>Basic component</h4>
 
-    <relative-time datetime="2042-06-21T16:30:00-08:00" format="datetime">
-      June 21, 2042
-    </relative-time>
+      <relative-time datetime="2042-06-210T16:30:00-08:00">
+        June 21, 2042
+      </relative-time>
 
-    <h3>With attribute <code>format="duration"</code></h3>
+      <h4>With attribute <code>format="datetime"</code></h4>
 
-    <relative-time datetime="2042-06-21T16:30:00-08:00" format="duration">
-      June 21, 2042
-    </relative-time>
+      <relative-time datetime="2042-06-21T16:30:00-08:00" format="datetime">
+        June 21, 2042
+      </relative-time>
 
-    <h3>With attribute <code>format="relative"</code></h3>
+      <h4>With attribute <code>format="duration"</code></h4>
 
-    <relative-time datetime="2042-06-21T16:30:00-08:00" format="relative">
-      June 21, 2042
-    </relative-time>
+      <relative-time datetime="2042-06-21T16:30:00-08:00" format="duration">
+        June 21, 2042
+      </relative-time>
+
+      <h4>With attribute <code>format="relative"</code></h4>
+
+      <relative-time datetime="2042-06-21T16:30:00-08:00" format="relative">
+        June 21, 2042
+      </relative-time>
+    </section>
   </body>
 </html>
